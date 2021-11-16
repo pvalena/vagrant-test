@@ -1,0 +1,1 @@
+`libvirt.qemu_use_session = false` is misbehaving (times out)

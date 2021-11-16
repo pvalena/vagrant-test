@@ -1,0 +1,140 @@
+
+    1  dnf install -yb vagrant{,-libvirt} libvirt qemu
+    2  sudo dnf install -yb vagrant{,-libvirt} libvirt qemu
+    3  sudo dnf install -y vagrant{,-libvirt} libvirt qemu --nogpgcheck
+    4  sudo dnf install -y vagrant{,-libvirt} libvirt qemu --nogpgcheck --skip-broken --allowerasing
+    5  dnf update -yb && sudo dnf install -y vagrant{,-libvirt} libvirt qemu --nogpgcheck --skip-broken --allowerasing
+    6  sudo dnf update -yb && sudo dnf install -y vagrant{,-libvirt} libvirt qemu --nogpgcheck --skip-broken --allowerasing
+    7  vagrant
+    8  mkdir test
+    9  cd test
+   10  vagrant init -fm fedora/30-cloud-base
+   11  vagrant status
+   12  vagrant up
+   13  l
+   14  ls
+   15  rm Vagrantfile
+   16  vagrant init -fm alpine/alpine64
+   17  vagrant up
+   18  vagrant destroy
+   19  vagrant box list
+   20  rm Vagrantfile
+   21  vagrant init -fm generic/alpine38
+   22  agrant up
+   23  vagrant up
+   24  rm -rf .vagrant/
+   25  vagrant destroy
+   26  vagrant box list
+   27  rm -rf ~/.vagrant.d/
+   28  vagrant init -fm generic/alpine37
+   29  vagrant up
+   30  l .vagrant/
+   31  ll .vagrant/
+   32  ll .vagrant/*
+   33  ll .vagrant/*/*
+   34  ll .vagrant/*/*/*
+   35  ll .vagrant/*/*/*/*
+   36  ll .vagrant/*/*/*/*/*
+   37  ll .vagrant/*/*/*/*
+   38  ls
+   39  ls ~/.vagrant.d
+   40  find -type f ~/.vagrant.d
+   41  find ~/.vagrant.d -type f
+   42  find ~/.vagrant.d -type f | xargs ls -dh
+   43  find ~/.vagrant.d -type f | xargs ls -ldh
+   44  mv /home/vagrant/.vagrant.d/tmp/box56a568ba525dbc6ccd1c8f1788 alpine37.box
+   45  mv /home/vagrant/.vagrant.d/tmp/box56a568ba525dbc6ccd1c8f17882d6a3de7856815  alpine37.box
+   46  l
+   47  ls
+   48  curl -C - -o alpine37.box -Lk# https://vagrantcloud.com/generic/boxes/alpine37/versions/1.9.34/providers/libvirt.box
+   49  file alpine37.box
+   50  ls -lahd .
+   51  vagrant add --help
+   52  vagrant box add --help
+   53  vagrant box add --name 'generic/alpine37' --provider libvirt ./alpine37.box
+   54  vagrant up
+   55  sudo systemctl restart livirt
+   56  sudo systemctl restart livirtd
+   57  sudo systemctl restart libvirtd
+   58  vagrant up
+   59  nano Vagrantfile
+   60  sudo dnf install -yb nano screen
+   61  exec screen -RdU
+   62  vagrant up
+   63  ip -o a
+   64  nano Vagrantfile
+   65  vagrant up
+   66  nano Vagrantfile
+   67  vagrant up
+   68  ip -o a
+   69  nano Vagrantfile
+   70  vagrant up
+   71  sudo systemctl restart libvirtd
+   72  nano Vagrantfile
+   73  vagrant up
+   74  nano Vagrantfile
+   75  vagrant destroy
+   76  nano Vagrantfile
+   77  vagrant destroy -f
+   78  vagrant global-statius
+   79*
+   80  nano Vagrantfile
+   81  vagrant up
+   82  nano Vagrantfile
+   83  vagrant up
+   84  nano Vagrantfile
+   85  vagrant up
+   86  nano Vagrantfile
+   87  vagrant up
+   88  virsh list --all
+   89  vagrant destroy
+   90  sudo systemctl restart libvirtd
+   91  vagrant global-statius
+   92  vagrant global-status
+   93  virsh list --all
+   94  virsh undefine test_default
+   95  vagrant up
+   96  ..
+   97  cd ..
+   98  mv test_nested
+   99  mv test tnested
+  100  cd tnested
+  101  vagrant up
+  102  vagrant box list
+  103  virsh vol-liust
+  104  virsh vol-list
+  105  virsh vol-list --pool default
+  106  virsh vol-del --pool default test_default.img
+  107  virsh vol-delete --pool default test_default.img
+  108  virsh vol-delete --pool default generic-VAGRANTSLASH-alpine37_vagrant_box_image_0.img
+  109  sudo virsh vol-list --pool default
+  110  sudo virsh vol-delete --pool default generic-VAGRANTSLASH-alpine37_vagrant_box_image_0.img
+  111  sudo virsh vol-delete --pool default test_default.img
+  112  virsh undefine test_default
+  113  sudo virsh undefine test_default
+  114  nano Vagrantfile
+  115  vagrant up
+  116  ls
+  117  sudo virsh vol-list --pool default
+  118  virsh vol-list --pool default
+  119  rm /home/vagrant/.local/share/libvirt/images/generic-VAGRANTSLASH-alpine37_vagrant_box_image_0.img
+  120  vagrant box list
+  121  vagrant box remove generic/alpine37
+  122  vagrant box add --name 'generic/alpine37' --provider libvirt ./alpine37.box
+  123  vagrant up
+  124  virsh vol-list --pool default
+  125  sudo virsh vol-list --pool default
+  126  vagrant box list
+  127  vagrant box remove generic/alpine37
+  128  rm -rf .vagrant/
+  129  rm -rf ~/.vagrant/
+  130  rm -rf ~/.vagrant.d
+  131  rm -rf ~/.local/share/libvirt/
+  132  sudo ls /var/lib/libvirt/images/
+  133  vagrant box add --name 'generic/alpine37_2' --provider libvirt ./alpine37.box
+  134  nano Vagrantfile
+  135  vagrant upo
+  136  vagrant up
+  137  sudo systemctl restart libvirtd
+  138  vagrant up
+  139  history
