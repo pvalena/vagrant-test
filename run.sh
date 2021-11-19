@@ -3,7 +3,12 @@ set -xe
 set -o pipefail
 bash -n "$0"
 f="vagrant_smoke_test.log"
-./tv.sh 2>&1 | tee "$f"
+
+[[ "$1" == "-c" ]] || {
+  ./tv.sh 2>&1 | tee "$f"
+}
+
+ls "$f"
 
 O="$(
     cat -v "$f" \
