@@ -64,7 +64,7 @@ v="$d/voldel"
   echo "RPMs:"
   bash -c "rpm -q $P" | xargs -i bash -c "echo ' - {}' | sort -u"
   echo
-  bash -c "dnf -q list $P"
+  bash -c "dnf -q list --installed $P"
 
   [[ -n "$l" ]] && exit 0
 
