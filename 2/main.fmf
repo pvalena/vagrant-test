@@ -1,0 +1,2 @@
+name: Custom vagrant box hostname with libvirt
+test: ./tv.sh 2
