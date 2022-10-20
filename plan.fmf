@@ -1,6 +1,9 @@
 
 summary: Test for general vagrant functionality in Fedora
 
+discover:
+    how: fmf
+
 prepare:
     - name: Install Dependencies
       how: install
