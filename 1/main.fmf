@@ -1,1 +1,8 @@
-summary: Smoke test for vagrant
+name: Smoke test for vagrant #1
+test: |
+  vagrant up
+  sleep 2
+  vagrant ssh -c "echo $((11*11))" | grep 121
+  vagrant destroy -f
+
+
