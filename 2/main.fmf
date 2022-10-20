@@ -1,7 +1,2 @@
 name: Custom vagrant box hostname with libvirt
-test: |
-  vagrant up
-  sleep 2
-  vagrant ssh -c "echo $((11*11))" | grep 121
-  vagrant destroy -f
-
+test: ./tv.sh 2
